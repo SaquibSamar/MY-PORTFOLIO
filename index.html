@@ -6,109 +6,129 @@
     <title>Saquib Samar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <h1 class="logo">Saquib.</h1>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Saquib<span>.</span></div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-text">
-        <h2>Hello, I'm <span>Saquib Samar</span></h2>
-        <p>Web Developer • CSE Student • Cybersecurity & AI Enthusiast</p>
-        <a href="Saquib_Samar_Resume.pdf" class="btn" download>Download Resume</a>
-    </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1 class="title">Saquib Samar</h1>
+            <p class="subtitle">Web Developer • CSE Student • Cybersecurity & AI Enthusiast</p>
 
-    <div class="hero-img">
-        <img src="your-photo.png" alt="Profile Image">
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
-    <p>
-        I am a B.Tech CSE student specializing in Web Development, Full Stack Development,
-        Cybersecurity, and AI/ML. I enjoy building modern, functional, and visually appealing web
-        applications while continuously learning new technologies.
-    </p>
-
-    <div class="info-grid">
-        <p><b>Location:</b> Ramgarh Cantt, Jharkhand</p>
-        <p><b>Email:</b> samarsaquib15@gmail.com</p>
-        <p><b>Phone:</b> 8582098230</p>
-        <p><b>GitHub:</b> github.com/SaquibSamar</p>
-        <p><b>LinkedIn:</b> linkedin.com/in/saquib-samar-9a5962336</p>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Firebase</div>
-        <div class="skill-card">APIs (OpenWeather, OpenCage)</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">VS Code</div>
-        <div class="skill-card highlight">Learning: React.js</div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="slider">
-        <div class="slide">
-            <h3>Weather App</h3>
-            <p>Real-time weather using OpenWeather API</p>
+            <a href="Saquib_Samar_Resume.pdf" class="resume-btn" download>
+                Download Resume
+            </a>
         </div>
-        <div class="slide">
-            <h3>Catering Website</h3>
-            <p>Responsive UI with elegant layout</p>
-        </div>
-        <div class="slide">
-            <h3>Interactive Map App</h3>
-            <p>OpenCage API-based location search</p>
-        </div>
-        <div class="slide">
-            <h3>Chat App</h3>
-            <p>Firebase-based real-time chat</p>
-        </div>
-        <div class="slide">
-            <h3>Gym Management System</h3>
-            <p>Member & plan UI system</p>
-        </div>
-        <div class="slide">
-            <h3>Portfolio Website</h3>
-            <p>Modern responsive design</p>
-        </div>
-    </div>
-</section>
 
-<!-- Footer -->
-<footer id="contact">
-    <p>© 2025 Saquib Samar. All Rights Reserved.</p>
-</footer>
+        <div class="hero-right">
+            <img src="assets/saquib.png" alt="Saquib Photo">
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a B.Tech CSE student specializing in Web Development, Full Stack Development,
+            Cybersecurity, and AI/ML. I love building modern websites and learning new technologies.
+        </p>
+
+        <div class="info-grid">
+            <p><strong>Location:</strong> Ramgarh Cantt, Jharkhand</p>
+            <p><strong>Phone:</strong> 8582098230</p>
+            <p><strong>Email:</strong> samarsaquib15@gmail.com</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/SaquibSamar">SaquibSamar</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saquib-samar-9a5962336">View Profile</a></p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+
+        <div class="skill-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Firebase</div>
+            <div class="skill-card">Git / GitHub</div>
+            <div class="skill-card">VS Code</div>
+            <div class="skill-card">APIs (OpenWeather, OpenCage)</div>
+            <div class="skill-card learning">Learning: React.js</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="slider">
+            <div class="slides">
+
+                <div class="project-card">
+                    <img src="assets/weather.png" class="project-img" alt="Weather App Screenshot">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather using OpenWeather API.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/catering.png" class="project-img" alt="Catering Website Screenshot">
+                    <h3>Catering Website</h3>
+                    <p>Responsive multi-section catering service website.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/map.png" class="project-img" alt="Interactive Map Screenshot">
+                    <h3>Interactive Map</h3>
+                    <p>Live geolocation search using OpenCage API.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/chat.png" class="project-img" alt="Chat App Screenshot">
+                    <h3>Chat App</h3>
+                    <p>Real-time messaging app using Firebase.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/gym.png" class="project-img" alt="Gym App Screenshot">
+                    <h3>Gym Management System</h3>
+                    <p>Modern UI for members and plans management.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/portfolio.png" class="project-img" alt="Portfolio Screenshot">
+                    <h3>Portfolio Website</h3>
+                    <p>Fully responsive personal portfolio website.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slider-buttons">
+            <button id="prev">‹</button>
+            <button id="next">›</button>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact">
+        <p>© 2025 Saquib Samar • All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
