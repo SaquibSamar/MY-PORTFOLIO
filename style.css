@@ -175,3 +175,23 @@ footer {
         margin-top: 40px;
     }
 }
+/* ================= Scroll Animation =============== */
+section, .project-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+section.fade-in, .project-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= Project Card Hover ============== */
+.project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.project-card:hover {
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.2);
+}
