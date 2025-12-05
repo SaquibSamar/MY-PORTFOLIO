@@ -1,23 +1,18 @@
-// Hero animation
-gsap.from(".hero-text", {
-    opacity: 0,
-    y: 30,
-    duration: 1,
-});
+let currentSlide = 0;
+const slides = document.querySelector(".slides");
+const totalSlides = document.querySelectorAll(".project-card").length;
+const cardWidth = 290; // including gap
 
-gsap.from(".hero-img", {
-    opacity: 0,
-    scale: 0.8,
-    duration: 1,
-    delay: 0.3
-});
+document.getElementById("next").onclick = () => {
+    if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        slides.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+    }
+};
 
-// Section animations
-gsap.utils.toArray(".section-title").forEach((title) => {
-    gsap.from(title, {
-        scrollTrigger: title,
-        opacity: 0,
-        y: 25,
-        duration: 0.8
-    });
-});
+document.getElementById("prev").onclick = () => {
+    if (currentSlide > 0) {
+        currentSlide--;
+        slides.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+    }
+};
