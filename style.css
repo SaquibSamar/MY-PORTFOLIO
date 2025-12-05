@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #111;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    opacity: 0.6;
+}
+
+/* Hero */
+.hero {
+    margin-top: 100px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h2 {
+    font-size: 38px;
+}
+
+.hero-text h2 span {
+    color: #005eff;
+}
+
+.hero-text p {
+    margin: 12px 0 20px;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #005eff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.hero-img img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* About */
+.about {
+    padding: 60px;
+}
+
+.info-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* Skills */
+.skills {
+    padding: 60px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 16px;
+}
+
+.skill-card {
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+}
+
+.highlight {
+    background: #eef4ff;
+}
+
+/* Projects Slider */
+.projects {
+    padding: 60px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    min-width: 260px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    opacity: 0.7;
+}
