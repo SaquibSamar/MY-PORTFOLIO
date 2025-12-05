@@ -3,132 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saquib Samar | Portfolio</title>
+    <title>Saquib Samar • Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">Saquib<span>.</span></div>
+        <h2 class="logo">Saquib <span>Samar</span></h2>
         <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="mailto:samarsaquib15@gmail.com" class="contact-btn">Contact</a>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-left">
-            <h1 class="title">Saquib Samar</h1>
-            <p class="subtitle">Web Developer • CSE Student • Cybersecurity & AI Enthusiast</p>
+            <h1 class="title">Hi, I'm <span>Saquib Samar</span></h1>
+            <p class="subtitle">
+                Aspiring Full Stack Developer • Cybersecurity Enthusiast • AI Explorer  
+            </p>
 
-            <a href="Saquib_Samar_Resume.pdf" class="resume-btn" download>
-                Download Resume
-            </a>
+            <div class="hero-buttons">
+                <a href="Saquib_Samar_Resume.pdf" download class="resume-btn">Download Resume</a>
+                <a href="#projects" class="explore-btn">Explore Projects</a>
+            </div>
         </div>
 
         <div class="hero-right">
-            <img src="assets/saquib.png" alt="Saquib Photo">
+            <img src="your-photo.png" alt="Profile Photo">
         </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="about">
-        <h2>About Me</h2>
+        <h2 class="section-title">About Me</h2>
         <p>
-            I am a B.Tech CSE student specializing in Web Development, Full Stack Development,
-            Cybersecurity, and AI/ML. I love building modern websites and learning new technologies.
+            I am a Computer Science student specializing in **Web Development & Software Development**.  
+            I love building modern, functional, and user-focused digital experiences.  
+            Passionate about **Cybersecurity**, **Full-Stack Development**, and **AI/ML**.
         </p>
-
-        <div class="info-grid">
-            <p><strong>Location:</strong> Ramgarh Cantt, Jharkhand</p>
-            <p><strong>Phone:</strong> 8582098230</p>
-            <p><strong>Email:</strong> samarsaquib15@gmail.com</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/SaquibSamar">SaquibSamar</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saquib-samar-9a5962336">View Profile</a></p>
-        </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="skills">
-        <h2>Skills</h2>
+        <h2 class="section-title">Skills</h2>
 
-        <div class="skill-grid">
+        <div class="skills-grid">
             <div class="skill-card">HTML</div>
             <div class="skill-card">CSS</div>
             <div class="skill-card">JavaScript</div>
             <div class="skill-card">Firebase</div>
-            <div class="skill-card">Git / GitHub</div>
-            <div class="skill-card">VS Code</div>
+            <div class="skill-card">React.js (Learning)</div>
+            <div class="skill-card">Git & GitHub</div>
             <div class="skill-card">APIs (OpenWeather, OpenCage)</div>
-            <div class="skill-card learning">Learning: React.js</div>
+            <div class="skill-card">Soft Skills: Communication, Problem Solving</div>
         </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2 class="section-title">Projects</h2>
 
-        <div class="slider">
-            <div class="slides">
+        <div class="project-slider">
 
-                <div class="project-card">
-                    <img src="assets/weather.png" class="project-img" alt="Weather App Screenshot">
-                    <h3>Weather App</h3>
-                    <p>Real-time weather using OpenWeather API.</p>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/catering.png" class="project-img" alt="Catering Website Screenshot">
-                    <h3>Catering Website</h3>
-                    <p>Responsive multi-section catering service website.</p>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/map.png" class="project-img" alt="Interactive Map Screenshot">
-                    <h3>Interactive Map</h3>
-                    <p>Live geolocation search using OpenCage API.</p>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/chat.png" class="project-img" alt="Chat App Screenshot">
-                    <h3>Chat App</h3>
-                    <p>Real-time messaging app using Firebase.</p>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/gym.png" class="project-img" alt="Gym App Screenshot">
-                    <h3>Gym Management System</h3>
-                    <p>Modern UI for members and plans management.</p>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/portfolio.png" class="project-img" alt="Portfolio Screenshot">
-                    <h3>Portfolio Website</h3>
-                    <p>Fully responsive personal portfolio website.</p>
-                </div>
-
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+                <img src="project1.png" class="project-img">
+                <h3>Weather App</h3>
+                <p>Uses OpenWeather API for real-time weather updates.</p>
             </div>
-        </div>
 
-        <div class="slider-buttons">
-            <button id="prev">‹</button>
-            <button id="next">›</button>
-        </div>
+            <div class="project-card">
+                <img src="project2.png" class="project-img">
+                <h3>Catering App</h3>
+                <p>Modern UI food catering website with menu showcase.</p>
+            </div>
 
+            <div class="project-card">
+                <img src="project3.png" class="project-img">
+                <h3>Interactive Map</h3>
+                <p>Built using OpenCage API & JavaScript.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="project4.png" class="project-img">
+                <h3>Chat App</h3>
+                <p>Firebase-based real-time chat application.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="project5.png" class="project-img">
+                <h3>Gym Management System</h3>
+                <p>Simple membership management website.</p>
+            </div>
+
+        </div>
     </section>
 
-    <!-- CONTACT -->
-    <footer id="contact">
+    <!-- FOOTER -->
+    <footer>
         <p>© 2025 Saquib Samar • All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
